@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+workspace 'Car.xcworkspace'
+
+target 'Car' do
+  project 'Car'
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Car
+  pod 'Charts'
+  pod 'CocoaAsyncSocket'
+end
+
+target 'obd2communication' do
+  project 'obd2communication/obd2communication'
+  use_frameworks!
+  pod 'CocoaAsyncSocket'
+end
